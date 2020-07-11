@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        body{
+            text-align: center;
+            margin-top: 100px;
+            background-image: url('https://wallpapercave.com/wp/wp3194879.png');
+            font-size: xx-large;
+        }
+        h1, h4{
+            color: white;
+        }
+        .bor{
+            border: 4px solid red;
+            border-radius: 10px;
+            display: inline-block;
+            width: 60%;
+            margin: 10px;
+            padding: 5px 0px;
+        }
+        #one h1 {
+            color: red;
+            display: inline-block;
+            width: 100px;
+            background-color: black;    
+        }
+        #one h2{
+            display: inline-block;
+            color: white;
+        }
+        .two{
+            padding: 40px;
+            word-spacing: 20px;
+        }
+        .two button{
+            width: 90px;
+            font-size: 20px;
+        }
+        .two button:hover{
+            background-color: rgb(245, 245, 182);
+            color: black;
+        }
+        #nest{
+            font-size: xx-large;
+            color: white;
+            background-color: none;
+        }
+        #min, #sec, #msec{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="backg">
+        <div class="bor">
+            <div>
+                <h1>"Stopwatch"</h1>
+                <br>
+                <h4>Every Seconds Count</h4>
+            </div>
+            <br>
+            <div id="one">
+                <h1 id="min">0</h1>
+                <h2 id="nest">min</h1>
+                <h2>:</h1>
+                <h1 id="sec">0</h1>
+                <h2 id="nest">sec</h1>
+                <h2>:</h1>
+                <h1 id="msec">0</h1>
+                <h2 id="nest">m-sec</h1>
+            </div>
+            <div class="two">
+                <button onclick="start()" type="button" class="btn btn-secondary">Start</button>
+                <button onclick="stop()" type="button" class="btn btn-secondary">Pause</button>
+                <button onclick="reset()" type="button" class="btn btn-secondary">Reset</button>
+            </div>
+        </div>
+
+        <h2 style="color: white;">..By M.Ali Qureshi</h2>
+        
+
+    </div>
+    <script src="app.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
